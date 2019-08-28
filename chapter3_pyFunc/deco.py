@@ -1,10 +1,13 @@
-#for the decorator it takes me a while to understand, sometimes I felt I understand but the another I have no clue to make it right. So I only keep one sentence in my mind, decorator is the function return object, which is function, sounds is the higher order function
+'''for the decorator it takes me a while to understand, sometimes I felt I understand but the another I have no clue to make it right. So I only keep one sentence in my mind, decorator is the function return object, which is function, sounds is the higher order function, or it takes the function as the param and return another function. 
 
 #key concept support recursion, think this concept as the packaged box, like the wrapper or think decorator as the shortcut to call the functions 
+'''
+
 def outpack(word):
     def wrapper():
         print(word) #free variable to use outside the function scope 
     return wrapper() 
+
 de=  outpack('Das ist Schone')
 eng= outpack('It\'s Ok')
 
@@ -40,13 +43,13 @@ class Travelling():
 
 t= Travelling('mars', 'chloe')
 
-if __name__=='__main__':
-    de
-    eng 
-    add()
-    call()  
-    multiply(9,10) 
-    t.where
-    t.who() 
+# if __name__=='__main__':
+#     de
+#     eng 
+#     add()
+#     call()  
+#     multiply(9,10) 
+#     t.where
+#     t.who() 
 
 
